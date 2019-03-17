@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color:#333 ;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: blue;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="home.jsp">Home</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Teams
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+     
+      
+      <a href="mi.jsp">MI</a>
+      <a href="srh.jsp">SRH</a>
+      <a href="dd.jsp">DD</a>
+       <a href="rcb.jsp">RCB</a>
+       <a href="csk.jsp">CSK</a>
+      <a href="rr.jsp">RR</a>
+      <a href="kkr.jsp">KKR</a>
+      <a href="kxp.jsp">KXIP</a>
+    </div>
+    
+  </div> 
+<div class ="dropdown">
+  <button class="dropbtn">AUCTION
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+     
+      
+      <a href="mum.jsp">MI</a>
+      <a href="hyd.jsp">SRH</a>
+      <a href="del.jsp">DD</a>
+       <a href="bglr.jsp">RCB</a>
+       <a href="che.jsp">CSK</a>
+      <a href="raj.jsp">RR</a>
+      <a href="kol.jsp">KKR</a>
+      <a href="pun.jsp">KXIP</a>
+    </div>
+    
+  </div>
+  <a href="table.jsp">PointsTable</a>
+  <div class="dropdown">
+    <button class="dropbtn">Players
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href= "batsman.jsp">Batsman</a>
+     
+      <a href="allrounder.jsp">Allrounder</a>
+      <a href="bowler.jsp">Bowlers</a>
+    </div>
+    
+  </div>
+   <a href="admin1.html">ADMIN</a>
+ 
+  
+</div>
+
+<body>
+<form action=batsman2.jsp>
+
+Player id<br>
+<input type="text" required name="id"><br>
+Innings<br>
+<input type="text" name="ings"><br>
+Runs<br>
+<input type="text" name="runs"><br>
+Average<br>
+<input type="text" name="avg"><br>
+Strike Rate<br>
+<input type="text" name="sr"><br>
+Best Score<br>
+<input type="text" name="best"><br>
+Hundred<br>
+<input type="text" name="hundred"><br>
+Fifty<br>
+<input type="text" name="fifty"><br>
+<input type="submit" value=submit>
+
+
+
+
+
+
+
+
+
+
+</form>
+</body>
+</html>
